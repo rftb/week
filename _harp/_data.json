@@ -1,17 +1,21 @@
 {
   "timeline": [
     {
-      "stamp": "Week One: Begin",
-      "content": "Kickoff Meeting:",
+      "stamp": "Brandon",
+      "content": "",
       "links": {
-        "Agenda": "agenda.html"
+        "Monday": "agenda.html"
       }
     },
     {
       "stamp": "Week One: End",
       "content": "Kickoff Meeting",
       "links": {
+      },
+      "content": "Kickoff Meeting",
+      "links": {
       }
+
     },
     {
       "stamp": "Week Two: Begin",
