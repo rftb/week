@@ -1,3 +1,2 @@
-# Monday
-
-# Tuesday
+# - - - - - - - M - - - - - - - T - - - - - - - W - - - - - - - T  - - - - - - - F
+## Brandon CV, G$
