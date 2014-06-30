@@ -51,7 +51,7 @@
     }
   , { "rider": "Preston",
       "monday": {
-        "winchester" : 6
+        "winchester" : 4
       , "buxton" : 6
       },
       "tuesday": {
