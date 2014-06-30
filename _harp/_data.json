@@ -2,11 +2,11 @@
   "timeline": [
     { "rider": "Brandon",
       "monday": {
-        "cv" : 1
-      , "mt" : 8
+        "City View" : 1
+      , "Medieval Times" : 8
       },
       "tuesday": {
-       "bx" : 6
+       "Buxton" : 6
       },
       "wednesday": {
 
@@ -20,12 +20,12 @@
     }
   , { "rider": "Danny",
       "monday": {
-        "gh" : 4
+        "GH" : 4
       },
       "tuesday": {
       },
       "wednesday": {
-       "b4" : 6
+       "Balfour" : 6
       },
       "thursday": {
 
@@ -55,10 +55,10 @@
       , "buxton" : 6
       },
       "tuesday": {
-        "mt" : 6
+        "Medieval Times" : 6
       },
       "wednesday": {
-      "hr" : 1
+      "hrachitect" : 1
       },
       "thursday": {
 
