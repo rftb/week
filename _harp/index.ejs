@@ -5,8 +5,87 @@
   <title><%= project_name %> Project Timeline</title>
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+
+<style>
+.day {
+  margin: .25em;
+}
+
+</style>
+
 </head>
 <body>
-<%- partial("_week") %>
+
+<div class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">This Week @ Ride</a>
+    </div>
+  </div>
+</div>
+
+  <% if (public._data && public._data.timeline && public._data.timeline.length > 0) { %>
+    <!-- Make sure we have timeline data -->
+    <% var tl = public._data.timeline %>
+    <div class="timeline container">
+      <div class="row">
+        <div class="col-md-2">Monday</div>
+        <div class="col-md-2">Tuesday</div>
+        <div class="col-md-2">Wednesday</div>
+        <div class="col-md-2">Thursday</div>
+        <div class="col-md-3">Friday</div>
+      </div>
+      <% for (var i in tl) { %>
+        <div class="rider panel panel-default">
+          <% if (tl[i].rider) { %>
+            <div class="panel-heading"><%= tl[i].rider %></div>
+            <% var mon = tl[i].monday
+                   tue = tl[i].tuesday
+                   wed = tl[i].wednesday
+                   thu = tl[i].thursday
+                   fri = tl[i].friday
+            %>
+              <div class="panel-body">
+                <% for (var client in mon) { %>
+                  <div class="row day">
+                  <div class="label label-primary col-md-<%= mon[client] %>"><%= client %></div>
+                  </div>
+                <% } %>
+                <% for (var client in tue) { %>
+                  <div class="row day">
+                  <div class="label label-danger col-md-<%= tue[client] %> col-md-offset-2 "><%= client %></div>
+                  </div>
+                <% } %>
+                <% for (var client in wed) { %>
+                  <div class="row day">
+                  <div class="label label-info col-md-<%= wed[client] %> col-md-offset-4 "><%= client %></div>
+                  </div>
+                <% } %>
+                <% for (var client in thu) { %>
+                  <div class="row day">
+                  <div class="label label-success col-md-<%= thu[client] %> col-md-offset-6 "><%= client %></div>
+                  </div>
+                <% } %>
+                <% for (var client in fri) { %>
+                  <div class="row day">
+                  <div class="label label-default col-md-<%= fri[client] %> col-md-offset-8 "><%= client %></div>
+                  </div>
+                <% } %>
+              </div>
+          <% } %>
+        </div>
+      <% } %>
+    </div>
+  <% } else { %>
+    <!-- Show instructions if there are no timeline items -->
+    <div class="instructions">
+      <h1>Instructions!</h1>
+      <ol>
+        <li>Rename <strong>_data-sample.json</strong> to <strong>_data.json</strong></li>
+        <li>Update timeline events in the <strong>_data.json</strong> file</li>
+        <li>Refresh the browser to make sure it’s working properly</li>
+      </ol>
+    </div>
+  <% } %>
 </body>
 </html>

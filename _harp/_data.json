@@ -1,50 +1,72 @@
 {
   "timeline": [
-    {
-      "stamp": "Monday",
-      "content": "",
-      "links": {
-        "Brandon": ""
-        , " - CV": ""
-        , " ~ MT": ""
-      , "": ""
-      , "Danny": ""
-        , " - GH": ""
-      , "": ""
-      , "Alex": ""
-        , " - LC": ""
-      , "": ""
-      , "Preston": ""
-        , " - Bx": ""
-        , " - Win": ""
-        , " ~ MT": ""
-      }
-    },
-    {
-      "stamp": "Week One: End",
-      "content": "Kickoff Meetingd",
-      "links": {
+    { "rider": "Brandon",
+      "monday": {
+        "cv" : 1
+      , "mt" : 8
       },
-      "content": "aKickoff Meetinga",
-      "links": {
-      }
+      "tuesday": {
+       "bx" : 6
+      },
+      "wednesday": {
 
-    },
-    {
-      "stamp": "Week Two: Begin",
-      "content": "Kickoff Meeting",
-      "links": {
+      },
+      "thursday": {
+
+      },
+      "friday": {
+
       }
-    },
-    {
-      "stamp": "Week Two: End",
-      "content": "Kickoff Meeting",
-      "links": {
-      }
-    },
-    {
-      "stamp": "End of week 20",
-      "content": "Launch"
     }
+  , { "rider": "Danny",
+      "monday": {
+        "gh" : 4
+      },
+      "tuesday": {
+      },
+      "wednesday": {
+       "b4" : 6
+      },
+      "thursday": {
+
+      },
+      "friday": {
+
+      }
+    }
+  , { "rider": "Alex",
+      "monday": {
+        "lc" : 2
+      },
+      "tuesday": {
+      },
+      "wednesday": {
+        "lc" : 2
+      },
+      "thursday": {
+
+      },
+      "friday": {
+      }
+    }
+  , { "rider": "Preston",
+      "monday": {
+        "winchester" : 6
+      , "buxton" : 6
+      },
+      "tuesday": {
+        "mt" : 6
+      },
+      "wednesday": {
+      "hr" : 1
+      },
+      "thursday": {
+
+      },
+      "friday": {
+
+      }
+    }
+
   ]
 }
